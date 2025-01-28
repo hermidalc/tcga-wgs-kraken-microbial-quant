@@ -646,12 +646,12 @@ def main():
         r_file = open(new_report + "_bracken_" + abundance_lvl + extension, "w")
     else:
         r_file = open(args.report_new, "w")
-    if sum_all_reads == 0:
-        r_file.write(unclassified_line)
-        # r_file.write("%0.2f\t" % (float(u_reads) / float(total_reads) * 100))
-        # r_file.write("%i\t" % u_reads)
-        # r_file.write("%i\t" % u_reads)
-        # r_file.write("U\t0\tunclassified\n")
+    # if sum_all_reads == 0:
+    # r_file.write(unclassified_line)
+    # r_file.write("%0.2f\t" % (float(u_reads) / float(total_reads) * 100))
+    # r_file.write("%i\t" % u_reads)
+    # r_file.write("%i\t" % u_reads)
+    # r_file.write("U\t0\tunclassified\n")
     # For each current parent node, print to file
     curr_nodes = [root_node] if isinstance(root_node, Tree) else []
     while len(curr_nodes) > 0:
