@@ -111,7 +111,7 @@ kraken2:
     threads: all
   classify:
     extra:
-      common: '--use-names --report-minimizer-data --confidence 0.05 --minimum-hit-groups 3'
+      common: '--use-names --report-minimizer-data --minimum-hit-groups 3'
       paired_end: ''
     threads: 2
 
@@ -147,8 +147,8 @@ bracken:
     levels: [species, genus]
     read_thres:
       nucl:
-        sg: 10
-        rg: 1
+        sg: 0
+        rg: 0
       prot:
         sg: 0
         rg: 0
